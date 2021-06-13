@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    cursor: none;
+    font-family: 'Press Start 2P', cursive;
+    color: chartreuse;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.menupage {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 2;
+    cursor: default;
+    transition: all 0.1s ease;
+}
+
+.menupage .playbtn {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.menupage .playbtn:hover {
+    padding: 20px;
+}
+
+.cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.target {
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    z-index: 0;
+}
+
+.score {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    opacity: 0.5;
+}
+
+.timer {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+.highscore {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    margin: 20px;
+}
